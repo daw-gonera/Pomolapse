@@ -1,13 +1,37 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
+<head> <!-- head nichts was der user sehen kann aber der browser braucht -->
+  <meta charset="UTF-8" /> <!-- meta wie man die seite rändert zb UTF-8 für ä ü usw  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pomolapse</title>
+  <title>Pomolapse</title> <!-- das was im tab angezeigt wird -->
 </head>
 
 <body>
+
+  <header> <!-- header ist der obere teil der seite bzw Einleitender/Kopf-Bereich eines Inhalts -->
+    <h1>
+      Pomolapse
+    </h1>
+
+    <p>
+      Focus while art comes to life.
+    </p>
+  </header>
+
+  <main> <!-- main ist der hauptteil der seite -->
+    <b>Focus Sessions</b>
+    <br>
+
+    <input type="file" id="videoInput" accept="video/*" />
+
+    <p> 25:00 </p>
+
+    <button type="button" id="startButton">Start Focus Session</button>
+
+  </main>
+
+
   <script type="module" src="/src/main.js"></script>
 </body>
 
