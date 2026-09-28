@@ -9,26 +9,48 @@
 
 <body>
 
-  <header> <!-- header ist der obere teil der seite bzw Einleitender/Kopf-Bereich eines Inhalts -->
+  <header> <!-- Titel und Einleitung -->
     <h1>
       Pomolapse
     </h1>
-
     <p>
       Focus while art comes to life.
     </p>
   </header>
 
   <main> <!-- main ist der hauptteil der seite -->
-    <b>Focus Sessions</b>
-    <br>
 
-    <input type="file" id="videoInput" accept="video/*" />
+    <section>
+      <!-- Erklärung: unfärtiges Bild-->
+       <h2>How it Works</h2>
 
-    <p> 25:00 </p>
+       <img src="example.png" alt="Example Image: unfinished" />
+       <img src="example.png" alt="Example Image: finished" />
 
-    <button type="button" id="startButton">Start Focus Session</button>
+       <p>Your focus session brings the artwork to life.</p>
+    </section>
 
+    <section> <!-- Ein schon vorhandener Timelapse auswählen -->
+      <img src="example.png" alt="Beispiel Timelapse 1" />
+      <img src="example.png" alt="Beispiel Timelapse 2" />
+      <img src="example.png" alt="Beispiel Timelapse 3" />
+
+      <h2>Choose your Timelapse</h2>
+    </section>
+
+    <section><!-- Einen eigenen Timelapse hochladen -->
+      <h2>Or upload your own Timelapse</h2>
+      <input type="file" id="timelapseInput" accept="video/*" />
+    </section>
+
+    <section id="focusSection"><!-- Nach dem hochladen oder schon bei der auswahl der beispiel Timelapse soll die seite sich anpassen und das video angezeigt werden -->
+      <h2>Focus Sessions</h2>
+      <p>Watch your artwork come to life:</p>
+      <video controls src="/example.mp4"></video>
+      <p class="timer" id="timer"> 25:00 </p> <!-- class für css und id für javascript --> <!-- beispiel Timer -->
+      <button type="button" id="startButton">Start Focus Session</button>
+    </section>
+    
   </main>
 
 
