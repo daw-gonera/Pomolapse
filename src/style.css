@@ -1,57 +1,49 @@
-/*body {
+body {
   background-color: #F6F1E8;
-  color: black;
+  margin: 0;
 }
 
-h1 {
-  border: 2px solid red;
-  padding: 20px;
-  margin: 40px;
+header {
+  /*background-color: lightblue; /* später weg */
+  /*border: 2px solid black; /* später weg */
+
+  padding: 30px; /*innen 30px Luft zwischen Inhalt und Rand*/
+  margin: 10px 30px 10px; /*außen 30px Abstand zum Rest der Seite*/
+
+  text-align: center;
 }
 
-.timer {
-  border: 2px solid purple;
-  padding: 10px;
+header h1 {
+  font-size: 45px;
+  margin-bottom: 8px;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*body {
-  background-color: lightblue;
-  color: black;
+header p {
+  font-size: 20px;
+  margin-top: 0;
 }
 
+main {
+  /*background-color: green; /* später weg */
+  /*border: 2px solid black; /* später weg */
+  text-align: center;
 
+  margin: 0px auto;
+  padding: 30px;
+  max-width: 1400px;
+  width: 90%;
 
-h1 {
-  color: purple;
-  margin-bottom: 30px; /* Abstand zwischen Überschrift und Inhalt */
-/*}
-
-p {
-  margin-bottom: 30px; /* Abstand zwischen Paragraph und Inhalt */
-/*} 
-
-
-button {
-  background-color: blue;
-  color: white;
-  border: 1px solid gray;
-  border-radius: 10px;  /* abgerundete ecken */
-/*  margin: 30px; /* Abstand zwischen Button und anderen Elementen */
-/*  padding: 10px 20px;
-  cursor: pointer;
 }
 
-/* content ist in html beim button zb Start Focus Session, da kann aber auch text, bilder, usw. sein * /
-/* padding ist der abstand zwischen inhalt/content und rand, margin ist der abstand zwischen rand und anderen elementen * /
+.how-it-works img {
+  width: 48%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid lightgray;
+}
 
-
+.comparison-images {
+  display: flex;
+  justify-content: center;
+  gap: clamp(20px, 3vw, 60px); /* clap neues css konzept, der abstand ist mindestens 20px dynamisch und maximal 60px */
+}
