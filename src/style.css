@@ -8,7 +8,7 @@ header {
   /*border: 2px solid black; /* später weg */
 
   padding: 30px; /*innen 30px Luft zwischen Inhalt und Rand*/
-  margin: 10px 30px 10px; /*außen 30px Abstand zum Rest der Seite*/
+  margin: 10px 30px 10px; /*außen Abstand zum Rest der Seite: oben 10px, links/rechts 30px, unten 10px*/
 
   text-align: center;
 }
@@ -45,5 +45,5 @@ main {
 .comparison-images {
   display: flex;
   justify-content: center;
-  gap: clamp(20px, 3vw, 60px); /* clap neues css konzept, der abstand ist mindestens 20px dynamisch und maximal 60px */
+  gap: clamp(20px, 3vw, 60px); /* clamp neues css konzept, der abstand ist mindestens 20px dynamisch und maximal 60px */
 }
